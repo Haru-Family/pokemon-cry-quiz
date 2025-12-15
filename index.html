@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>포켓몬 울음소리 퀴즈 (1~151)</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <h1>🔊 울음소리 듣고 맞히기!</h1>
+      <p class="sub">관동(1~151) 포켓몬 중 하나가 울어요. 누구일까요?</p>
+    </header>
+
+    <section class="card">
+      <div class="controls">
+        <button id="btnNext" class="btn primary">시작하기</button>
+        <button id="btnReplay" class="btn" disabled>다시 듣기</button>
+      </div>
+
+      <div id="status" class="status">시작하기를 눌러주세요.</div>
+
+      <div id="choices" class="choices"></div>
+
+      <div id="reveal" class="reveal hidden">
+        <div class="badge" id="resultBadge">정답!</div>
+        <img id="pokeImg" alt="pokemon" />
+        <div class="name" id="pokeName"></div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <small>데이터: PokeAPI / 울음소리: PokeAPI cries(OGG)</small>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
