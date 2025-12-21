@@ -1,5 +1,5 @@
 const GEN1_MIN = 1;
-const GEN1_MAX = 151;
+const GEN1_MAX = 251;
 
 const $btnNext = document.getElementById("btnNext");
 const $btnReplay = document.getElementById("btnReplay");
